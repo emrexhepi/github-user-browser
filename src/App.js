@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { Route, Switch } from "react-router-dom";
+
+// import styles
 import './App.css';
 
 // import Material Design Bootstrap css
@@ -8,15 +11,20 @@ import 'mdbreact/dist/css/mdb.css';
 
 // import layout
 import MainLayout from "./layouts/MainLayout";
-//import UserList from "./containers/UserList/UserList";
+import UserList from "./containers/UserList/UserList";
 import UserDetails from './containers/UserDetails/UserDetails';
+import Error404 from "./components/Error404/Error404";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <MainLayout>
-          <UserDetails />
+          <Switch>
+            <Route path="/user/:userId" component={UserDetails} />
+            <Route exact path="/" component={UserList} />
+            <Route component={Error404} />
+          </Switch>
         </MainLayout>
       </div>
     );

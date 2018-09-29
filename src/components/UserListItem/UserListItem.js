@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 import {Card, CardImage, CardBody, CardTitle, CardText, Button} from "mdbreact";
 
@@ -21,7 +22,7 @@ const UserListItem = (props) => {
             <CardBody cascade>
                 <CardTitle>{props.name}</CardTitle>
                 <CardText>{props.userName}</CardText>
-                <Button href={props.detailsUrl} color="mdb-color">Details</Button>
+                <Link to={`/user/${props.userId}`} activeClassName="active" className="btn btn-mdb-color Ripple-parent">Details</Link>
             </CardBody>
         </Card>
       </div>
@@ -35,6 +36,7 @@ UserListItem.propTypes = {
 
 UserListItem.defaultProps  = {
     userName: "@username",
+    userId: 0,
     name: "Name Surname",
     detailsUrl: "#",
     avatar: "https://help.github.com/assets/images/help/profile/identicon.png"

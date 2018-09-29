@@ -1,0 +1,21 @@
+.Avatar .thumbnail .img-thumbnail {
+    display: inline-block;
+    position: relative;
+    min-width: 215px;
+    min-height: 215px;
+}
+
+.Avatar .details {
+    margin-top: 10px;
+}
+
+.Avatar .details h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.Avatar .details p {
+    color: #747373;
+    font-size: 0.9rem;
+    font-weight: 400;
+}

@@ -1,3 +1,5 @@
 .UserList {
+    min-height: 81vh;
     margin-top: 20px;
+    width: 100%;
 }

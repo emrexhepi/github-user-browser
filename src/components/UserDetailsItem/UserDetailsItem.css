@@ -1,0 +1,13 @@
+.UserDetailsItem {
+    border: 1px solid #1c2a48;
+    padding: 10px;
+    margin-bottom : 5px;
+}
+
+.UserDetailsItem .detail{
+    color: #7283a7;
+}
+
+.UserDetailsItem .value{
+    color: #1c2331;
+}
