@@ -5,4 +5,8 @@ with an option to display detailed user data on a separate page
 
 ### Github API
  - https://developer.github.com/v3/#link-header
- - https://api.github.com/users?since=19&per_page=20
+##### User list
+ - https://api.github.com/users?since={start}&per_page={end}
+
+##### User Details
+ - https://api.github.com/users/{login}
