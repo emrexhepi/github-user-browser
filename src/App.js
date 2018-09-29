@@ -8,14 +8,15 @@ import 'mdbreact/dist/css/mdb.css';
 
 // import layout
 import MainLayout from "./layouts/MainLayout";
-import UserList from "./containers/UserList/UserList";
+//import UserList from "./containers/UserList/UserList";
+import UserDetails from './containers/UserDetails/UserDetails';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <MainLayout>
-          <UserList />
+          <UserDetails />
         </MainLayout>
       </div>
     );

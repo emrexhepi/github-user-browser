@@ -1,0 +1,15 @@
+.UserListItem {
+    margin-bottom: 20px;
+}
+
+.UserListItem img {
+    width: 200px;
+    margin-top: -100px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    height: 150px;
+}

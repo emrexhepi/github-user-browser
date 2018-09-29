@@ -2,6 +2,7 @@ import React from 'react';
 
 //import components
 import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
 import Aux from "../hoc/Auxiliary";
 
 const MainLayout = (props) => {
@@ -13,6 +14,7 @@ const MainLayout = (props) => {
           {props.children}
         </div>
       </div>
+      <Footer />
     </Aux>
   )
 }
