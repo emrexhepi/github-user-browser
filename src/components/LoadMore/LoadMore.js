@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {Button} from "mdbreact";
+import {Button, Fa} from "mdbreact";
 
 //import css
 import "./LoadMore.css";
@@ -11,7 +11,12 @@ const LoadMore = (props) => {
     let content = <Button className="btn btn-sucess Ripple-parent">Load More</Button>;
 
     if(props.loadingMore) {
-        content = "Loading...";
+        content = (
+            <div>
+                <Fa icon="circle-o-notch" spin size="3x" className="text-default" fixed/>
+                <span className="sr-only">Loading...</span>
+            </div>
+        );
     }
 
     return (
