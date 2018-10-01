@@ -19,7 +19,7 @@ import Error404 from "./components/Error404/Error404";
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename={'/github-user-browser'}>
         <div className="App">
           <MainLayout>
             <Switch>
