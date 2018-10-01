@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { Route, Switch } from "react-router-dom";
 
 // import styles
@@ -18,15 +19,17 @@ import Error404 from "./components/Error404/Error404";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <MainLayout>
-          <Switch>
-            <Route path="/user/:userId" component={UserDetails} />
-            <Route exact path="/" component={UserList} />
-            <Route component={Error404} />
-          </Switch>
-        </MainLayout>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <MainLayout>
+            <Switch>
+              <Route path="/user/:userId" component={UserDetails} />
+              <Route exact path="/" component={UserList} />
+              <Route component={Error404} />
+            </Switch>
+          </MainLayout>
+        </div>
+      </BrowserRouter>
     );
   }
 }
