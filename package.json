@@ -2,7 +2,7 @@
   "name": "github-user-browser",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://emrexhepi.github.io/github-user-browser",
+  "homepage": "https://emrexhepi.github.io/github-user-browser/",
   "dependencies": {
     "axios": "^0.18.0",
     "mdbreact": "^4.8.0",
