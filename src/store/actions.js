@@ -30,10 +30,10 @@ export const receiveUsers = (dispatch) => {
     dispatch({
         type: LOADING,
         loading: true
-    })
+    });
+    
     const url = `${apiUrl}?since=0&per_page=12`;
     axios.get(url).then((response)=>{
-        console.log(response.data);
         dispatch({
             type: RECEIVE_USERS,
             payload: response.data

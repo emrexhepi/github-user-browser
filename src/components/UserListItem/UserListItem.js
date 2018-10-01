@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
@@ -18,8 +17,6 @@ class UserListItem extends Component {
 
     focusThis = ()=> {
         if(this.props.autofocus) {
-            console.log("focusig", this.props.userName);
-            console.log(this.focusRef.current)
             this.focusRef.current.scrollIntoView();
         }
     }
