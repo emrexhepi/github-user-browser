@@ -5,8 +5,7 @@ with an option to display detailed user data on a separate page
 
 ## Demo Link
 https://emrexhepi.github.io/github-user-browser/
-** Disclaimer: Github Pages limit routes it may not work as expected**
- if the demo does not work well please run your own server by cloning the repo, installin npm modules "npm insta" then running "npm start" to start the server. Also there is a api call limit keep that in mind too.
+ - Warning: there is a api call limit from github on unauthorized github users keep that in mind.
 
 ### Stack Used
  - React ✔
@@ -14,7 +13,7 @@ https://emrexhepi.github.io/github-user-browser/
  - React Router ✔
  - HTTP Library (Axios) ✔
  - Bootstrap (MDB/React) ✔
- - Jest ✔
+ - Jest, Enzyme ✔
 
 ### Objectives
  1. Project starts up correctly and compiles without errors. ✔
@@ -27,7 +26,7 @@ https://emrexhepi.github.io/github-user-browser/
  5. Provide a test for at least 1 react component and 1 reducer. ✔
 
 ### Tests locations
- - Component Test: src\components\Avatar\Avatar.test.js
+ - Component Test:  Test: src\components\Avatar\Avatar.test.js
  - Reducer Test: src\store\reducers\userDetails.test.js
 
 ### Github API
