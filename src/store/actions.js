@@ -49,13 +49,12 @@ export const receiveMoreUsers = (dispatch, currentUsersLength) => {
         type: LOADING_MORE,
         payload: true
     });
-    console.log("cUsrLength", currentUsersLength);
+
     const since = currentUsersLength - 1;
     const url = `${apiUrl}?since=${since}0&per_page=12`;
-    console.log("url", url);
 
     axios.get(url).then((response)=>{
-        console.log(response.data);
+
         dispatch({
             type: RECEIVE_USERS,
             payload: response.data

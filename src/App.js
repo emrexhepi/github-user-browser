@@ -21,9 +21,9 @@ class App extends Component {
     return (
 
 
-    // commented line is for github pages
-    //   <BrowserRouter basename={'/github-user-browser/'}>
-      <BrowserRouter basename={'/github-user-browser/'}>
+    // commented router line is for github pages
+    // <BrowserRouter basename={'/github-user-browser'}>
+    <BrowserRouter>
         <div className="App">
           <MainLayout>
             <Switch>
