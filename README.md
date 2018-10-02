@@ -26,6 +26,10 @@ https://emrexhepi.github.io/github-user-browser/
  4. Single user page should display the user data after refreshing the page. ✔
  5. Provide a test for at least 1 react component and 1 reducer. ✔
 
+#### Tests locations
+Component Test: src\components\Avatar\Avatar.test.js
+Reducer Test: src\store\reducers\userDetails.test.js
+
 ### Github API
 
 #### Api Documentation
