@@ -23,7 +23,7 @@ class App extends Component {
 
     // commented router line is for github pages
     // <BrowserRouter basename={'/github-user-browser'}>
-    <BrowserRouter>
+      <BrowserRouter>
         <div className="App">
           <MainLayout>
             <Switch>
