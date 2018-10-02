@@ -5,6 +5,8 @@ with an option to display detailed user data on a separate page
 
 ## Demo Link
 https://emrexhepi.github.io/github-user-browser/
+** Disclaimer: Github Pages limit routes it may not work as expected**
+ if the demo does not work well please run your own server by cloning the repo, installin npm modules "npm insta" then running "npm start" to start the server. Also there is a api call limit keep that in mind too.
 
 ### Stack Used
  - React ✔
