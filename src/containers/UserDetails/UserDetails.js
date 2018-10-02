@@ -19,7 +19,15 @@ class UserDetails extends Component {
         this.props.receiveUserDetails(this.props.match.params.userId);
     }
 
+    componentWillUnmount() {
+        this.props.cleanUserDetails();
+    }
+
     render() {
+
+        if(this.props.details.login !== undefined) {
+            document.title = `@${this.props.details.login} - React User Browser`;
+        }
 
         let content = <Loading />;
 
@@ -81,6 +89,7 @@ const mapDispatchToProps = (dispatch) => {
         receiveUserDetails: (payload) => {
             actionTypes.receiveUserDetails(payload, dispatch)
         },
+        cleanUserDetails: ()=>actionTypes.cleanUserDetails(dispatch),
         onLoaing: (payload) => dispatch({type: actionTypes.LOADING, payload})
     }
 }

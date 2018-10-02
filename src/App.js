@@ -41,8 +41,8 @@ class App extends Component {
     return (
 
       <Provider store={store}>
-        {/* // commented router line is for github pages */ }
-        {/* // <BrowserRouter basename={'/github-user-browser'}> */}
+        {/* the below commented router line is for github pages */ }
+        {/* <BrowserRouter basename={'/github-user-browser'}> */}
         <BrowserRouter>
           <div className="App">
             <MainLayout>

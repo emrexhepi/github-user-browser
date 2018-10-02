@@ -26,6 +26,13 @@ export const receiveUserDetails = (id, dispatch) => {
     });
 }
 
+export const cleanUserDetails = (dispatch) => {
+    dispatch({
+        type: RECEIVE_USER_DETAILS,
+        payload: {}
+    })
+}
+
 export const receiveUsers = (dispatch) => {
     dispatch({
         type: LOADING,

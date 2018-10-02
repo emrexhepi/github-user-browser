@@ -13,6 +13,7 @@ import "./UserList.css";
 class UserList extends Component {
 
     componentDidMount() {
+        document.title = "Github User Browser";
         if(this.props.users.length === 0) {
            this.props.receiveUsers();
         }
